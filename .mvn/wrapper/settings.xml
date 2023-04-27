@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">					  
+	<servers>
+	   <server>
+		  <id>snapshots</id>
+		  <username>svc_jenkins</username>
+		  <password>svc_jenkins</password>
+		</server>
+		<server>
+		  <id>releases</id>
+		  <username>svc_jenkins</username>
+		  <password>svc_jenkins</password>
+		</server>
+	</servers>
+	
+	<profiles>
+        <profile>
+            <id>feed</id>
+            <properties>
+				<altSnapshotDeploymentRepository>snapshots::https://devops.cleartech.com.br/nexus/repository/maven-snapshots/</altSnapshotDeploymentRepository>
+				<altReleaseDeploymentRepository>releases::https://devops.cleartech.com.br/nexus/repository/maven-releases/</altReleaseDeploymentRepository>
+			</properties>
+        </profile>
+    </profiles>
+
+</settings>
