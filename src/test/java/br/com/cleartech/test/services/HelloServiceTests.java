@@ -16,7 +16,7 @@ public class HelloServiceTests {
     @Test
     void helloTest() {
         String result = helloService.hello();
-        assertEquals( "Hello Devops", result );
+        assertEquals( "Hello Devops Error", result );
     }
 
 }
