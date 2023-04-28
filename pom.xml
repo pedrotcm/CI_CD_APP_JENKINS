@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.cleartech</groupId>
 	<artifactId>ci-cd-app-jenkins</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<name>ci-cd-app-jenkins</name>
 	<description>Project Test for CI/CD with Jenkins</description>
 	<properties>
