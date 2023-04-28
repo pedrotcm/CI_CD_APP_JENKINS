@@ -13,7 +13,7 @@ public class HelloController {
     @GetMapping
     public String index() {
         log.info( "Hello Devops" );
-        return "Hello Devops";
+        return "Hello Devops 2";
     }
     
 }
