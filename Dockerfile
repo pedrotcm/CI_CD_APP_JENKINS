@@ -22,6 +22,7 @@ WORKDIR /appl
 ADD $APPLICATION_PATH/$APPLICATION_NAME $APPLICATION_NAME
 
 VOLUME /appl/config
+VOLUME /appl/logs
 
 EXPOSE 8080
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS --enable-preview -jar $APPLICATION_NAME"]
