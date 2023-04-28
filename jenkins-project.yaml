@@ -1,0 +1,4 @@
+app:
+  servers:
+    QA: jd1srvdev002
+    UAT: jd1srvdev004
